@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elara Clinic — Specialists in Shoulder &amp; Hand Surgery</title>
+    <title>Dr Sophie Lantz Stockholm — Ortopedisk specialist</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&amp;display=swap"
       rel="stylesheet">
     <style>
@@ -1263,6 +1263,37 @@
       .elara-about__image-inner {
         overflow: hidden;
       }
+
+      .elara-social-links {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .elara-social-link {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background: rgba(91, 138, 154, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition-smooth);
+        text-decoration: none;
+      }
+
+      .elara-social-link:hover {
+        background: rgba(91, 138, 154, 0.15);
+        transform: translateY(-2px);
+      }
+
+      .elara-social-link svg {
+        width: 18px;
+        height: 18px;
+        stroke: var(--color-accent);
+        fill: none;
+        stroke-width: 1.5;
+      }
     </style>
   </head>
   <body>
@@ -1280,16 +1311,16 @@
     <nav class="elara-nav" id="elaraNav">
       <div class="elara-nav__container">
         <a href="#" class="elara-nav__logo">
-          <span class="elara-nav__logo-accent">Elara</span> Clinic<span class="elara-nav__logo-dot"></span>
+          <span class="elara-nav__logo-accent">Dr</span> Lantz<span class="elara-nav__logo-dot"></span>
         </a>
         <ul class="elara-nav__links">
-          <li><a href="#about" class="elara-nav__link">About</a></li>
-          <li><a href="#services" class="elara-nav__link">Services</a></li>
-          <li><a href="#why" class="elara-nav__link">Why Us</a></li>
-          <li><a href="#testimonials" class="elara-nav__link">Testimonials</a></li>
-          <li><a href="#contact" class="elara-nav__cta">Book Consultation</a></li>
+          <li><a href="#about" class="elara-nav__link">Om mig</a></li>
+          <li><a href="#services" class="elara-nav__link">Tjänster</a></li>
+          <li><a href="#why" class="elara-nav__link">Varför mig</a></li>
+          <li><a href="#testimonials" class="elara-nav__link">Omdömen</a></li>
+          <li><a href="#contact" class="elara-nav__cta">Boka tid</a></li>
         </ul>
-        <button class="elara-nav__mobile-toggle" id="elaraMobileToggle" aria-label="Toggle menu">
+        <button class="elara-nav__mobile-toggle" id="elaraMobileToggle" aria-label="Öppna meny">
           <span></span>
           <span></span>
           <span></span>
@@ -1299,11 +1330,11 @@
 
     <!-- Mobile Menu -->
     <div class="elara-mobile-menu" id="elaraMobileMenu">
-      <a href="#about" class="elara-mobile-menu__link" data-mobile-link="">About</a>
-      <a href="#services" class="elara-mobile-menu__link" data-mobile-link="">Services</a>
-      <a href="#why" class="elara-mobile-menu__link" data-mobile-link="">Why Us</a>
-      <a href="#testimonials" class="elara-mobile-menu__link" data-mobile-link="">Testimonials</a>
-      <a href="#contact" class="elara-mobile-menu__link" data-mobile-link="">Book Consultation</a>
+      <a href="#about" class="elara-mobile-menu__link" data-mobile-link="">Om mig</a>
+      <a href="#services" class="elara-mobile-menu__link" data-mobile-link="">Tjänster</a>
+      <a href="#why" class="elara-mobile-menu__link" data-mobile-link="">Varför mig</a>
+      <a href="#testimonials" class="elara-mobile-menu__link" data-mobile-link="">Omdömen</a>
+      <a href="#contact" class="elara-mobile-menu__link" data-mobile-link="">Boka tid</a>
     </div>
 
     <!-- Hero -->
@@ -1311,25 +1342,25 @@
       <div class="elara-hero__content">
         <div class="elara-hero__badge elara-fade-up">
           <span class="elara-hero__badge-dot"></span>
-          Private Specialist Clinic
+          Ortopedisk specialist
         </div>
         <h1 class="elara-hero__title elara-fade-up elara-fade-up--d1">
-          Specialists in<br><strong>Shoulder</strong> &amp; <strong><em>Hand</em></strong> Surgery
+          Välkommen till<br><strong>Dr Sophie Lantz</strong>
         </h1>
         <p class="elara-hero__description elara-fade-up elara-fade-up--d2">
-          Exceptional surgical care delivered with precision and compassion.
-          Restoring movement, relieving pain, and rebuilding confidence.
+          Ortopedisk kirurgspecialist med inriktning på axel, armbåge och knä.
+          Ultraljud används regelbundet för att hjälpa till vid diagnos av dina besvär.
         </p>
         <div class="elara-hero__actions elara-fade-up elara-fade-up--d3">
           <a href="#contact" class="elara-btn elara-btn--primary">
-            Book Consultation
+            Boka tid
             <svg class="elara-btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2">
               <line x1="5" y1="12" x2="19" y2="12"></line>
               <polyline points="12 5 19 12 12 19"></polyline>
             </svg>
           </a>
-          <a href="#services" class="elara-btn elara-btn--secondary">Learn More</a>
+          <a href="#services" class="elara-btn elara-btn--secondary">Läs mer</a>
         </div>
       </div>
       <div class="elara-hero__scroll-indicator" aria-hidden="true">
@@ -1345,29 +1376,29 @@
             <div class="elara-about__image-frame elara-glass">
               <div class="elara-about__image-inner">
                 <img class="elara-about__image-photo"
-                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
-                  alt="About us - Modern office workspace">
+                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                  alt="Dr Sophie Lantz - Ortopedisk specialist">
               </div>
               <div class="elara-about__stats">
-                <div class="elara-about__stat-number">25+</div>
-                <div class="elara-about__stat-text">Years of Excellence</div>
+                <div class="elara-about__stat-number">19+</div>
+                <div class="elara-about__stat-text">Års erfarenhet</div>
               </div>
             </div>
           </div>
           <div class="elara-about__content">
-            <span class="elara-section__label elara-fade-up">About Us</span>
+            <span class="elara-section__label elara-fade-up">Om mig</span>
             <h2 class="elara-section__title elara-fade-up elara-fade-up--d1">
-              Dedicated to <strong>precision</strong><br>and patient care
+              <strong>Dr Sophie Lantz</strong>
             </h2>
             <p class="elara-about__text elara-fade-up elara-fade-up--d2">
-              Elara Clinic brings together leading orthopaedic surgeons specialising exclusively in
-              conditions of the shoulder, elbow, wrist and hand. Our consultants are recognised
-              internationally for their expertise, published research, and commitment to achieving
-              the best possible outcomes.
+              Utexaminerad från Karolinska Institutet 2005. Specialist i ortopedi sedan 2014.
+              Har omfattande kirurgisk erfarenhet inom både öppen och artroskopisk kirurgi,
+              idrottsmedicin och ultraljudsdiagnostik.
             </p>
             <p class="elara-about__text elara-fade-up elara-fade-up--d3">
-              Every treatment plan is tailored to the individual — combining advanced surgical
-              techniques with a deeply personal approach to care.
+              Jag tar emot patienter helt privat utan avtal med regionen (tidigare landsting)
+              eller privata försäkringsbolag. Avgift för läkarbesök är 950 kr.
+              Frikort gäller inte. Intyg bekostas av försäkringsbolaget.
             </p>
             <div class="elara-about__highlights elara-fade-up elara-fade-up--d4">
               <div class="elara-about__highlight">
@@ -1377,7 +1408,7 @@
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
                   </svg>
                 </div>
-                <span class="elara-about__highlight-text">Fellowship-trained specialist surgeons</span>
+                <span class="elara-about__highlight-text">Medicinsk undersökning av axel-, armbågs- och knäbesvär</span>
               </div>
               <div class="elara-about__highlight">
                 <div class="elara-about__highlight-icon">
@@ -1386,7 +1417,7 @@
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
                   </svg>
                 </div>
-                <span class="elara-about__highlight-text">State-of-the-art surgical facilities</span>
+                <span class="elara-about__highlight-text">Uppföljning, behandling och utredning vid behov</span>
               </div>
               <div class="elara-about__highlight">
                 <div class="elara-about__highlight-icon">
@@ -1395,7 +1426,7 @@
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
                   </svg>
                 </div>
-                <span class="elara-about__highlight-text">Over 15,000 successful procedures</span>
+                <span class="elara-about__highlight-text">Intyg på begäran från försäkringsbolag</span>
               </div>
             </div>
           </div>
@@ -1407,13 +1438,13 @@
     <section class="elara-section elara-services" id="services">
       <div class="elara-section__container">
         <div class="elara-services__header">
-          <span class="elara-section__label elara-fade-up">Our Specialties</span>
+          <span class="elara-section__label elara-fade-up">Hur jag kan hjälpa dig</span>
           <h2 class="elara-section__title elara-fade-up elara-fade-up--d1">
-            Expert care for <strong>every condition</strong>
+            Vad jag <strong>specialiserar mig på</strong>
           </h2>
           <p class="elara-section__subtitle elara-fade-up elara-fade-up--d2">
-            From complex reconstructive surgery to minimally invasive procedures,
-            we offer comprehensive treatment across our specialist areas.
+            Omfattande ortopedisk vård för axel-, armbågs- och knäbesvär
+            med avancerade diagnostiska metoder inklusive ultraljud.
           </p>
         </div>
         <div class="elara-services__grid">
@@ -1428,13 +1459,13 @@
                 <path d="M19 11v2c0 1 0 3-2 4"></path>
               </svg>
             </div>
-            <h3 class="elara-service-card__title">Shoulder Surgery</h3>
+            <h3 class="elara-service-card__title">Axel</h3>
             <p class="elara-service-card__description">
-              Rotator cuff repair, shoulder replacement, instability surgery, and arthroscopic
-              procedures. Restoring full range of motion and pain-free living.
+              Medicinsk undersökning av axelbesvär inklusive ultraljudsdiagnostik.
+              Behandling, uppföljning och utredning vid behov.
             </p>
             <a href="#contact" class="elara-service-card__link">
-              Learn more
+              Läs mer
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
@@ -1442,7 +1473,7 @@
             </a>
           </div>
 
-          <!-- Hand -->
+          <!-- Elbow -->
           <div class="elara-service-card elara-glass elara-fade-up elara-fade-up--d2">
             <div class="elara-service-card__icon">
               <svg viewBox="0 0 24 24">
@@ -1453,13 +1484,13 @@
                 <path d="M6 14l-1.5-1.5a2 2 0 0 0-3 0 2 2 0 0 0 0 3L6 20"></path>
               </svg>
             </div>
-            <h3 class="elara-service-card__title">Hand &amp; Wrist Surgery</h3>
+            <h3 class="elara-service-card__title">Armbåge</h3>
             <p class="elara-service-card__description">
-              Carpal tunnel release, tendon repair, Dupuytren's treatment, fracture fixation,
-              and microsurgery. Precision care for complex hand conditions.
+              Bedömning och behandling av armbågsbesvär. Både öppen och artroskopisk kirurgi
+              för omfattande vård.
             </p>
             <a href="#contact" class="elara-service-card__link">
-              Learn more
+              Läs mer
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
@@ -1467,20 +1498,20 @@
             </a>
           </div>
 
-          <!-- Sports -->
+          <!-- Knee -->
           <div class="elara-service-card elara-glass elara-fade-up elara-fade-up--d3">
             <div class="elara-service-card__icon">
               <svg viewBox="0 0 24 24">
                 <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
               </svg>
             </div>
-            <h3 class="elara-service-card__title">Sports Injuries</h3>
+            <h3 class="elara-service-card__title">Knä</h3>
             <p class="elara-service-card__description">
-              Rapid diagnosis and advanced treatment for athletic injuries. Ligament reconstruction,
-              joint stabilisation, and accelerated rehabilitation protocols.
+              Diagnos och behandling av knäbesvär. Ultraljudsundersökning
+              och expertis inom idrottsmedicin.
             </p>
             <a href="#contact" class="elara-service-card__link">
-              Learn more
+              Läs mer
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
@@ -1496,43 +1527,42 @@
       <div class="elara-section__container">
         <div class="elara-why__layout">
           <div>
-            <span class="elara-section__label elara-fade-up">Why Elara</span>
+            <span class="elara-section__label elara-fade-up">Varför välja mig</span>
             <h2 class="elara-section__title elara-fade-up elara-fade-up--d1">
-              The <strong>difference</strong><br>you deserve
+              <strong>Skillnaden</strong><br>du förtjänar
             </h2>
             <p class="elara-section__subtitle elara-fade-up elara-fade-up--d2">
-              We believe exceptional outcomes come from an unwavering commitment to
-              excellence at every stage of your care journey.
+              Personlig ortopedisk vård med engagemang för att uppnå bästa möjliga
+              resultat för varje patient.
             </p>
           </div>
           <div class="elara-why__points">
             <div class="elara-why-point elara-glass elara-fade-up elara-fade-up--d1">
               <div class="elara-why-point__number">01</div>
-              <h3 class="elara-why-point__title">Specialist Surgeons</h3>
+              <h3 class="elara-why-point__title">Karolinska-utbildad</h3>
               <p class="elara-why-point__description">
-                Our consultants focus exclusively on upper limb surgery, ensuring unparalleled depth of expertise.
+                Ut-examinerad från Sveriges mest prestigefyllda medicinska universitet med omfattande kirurgisk träning.
               </p>
             </div>
             <div class="elara-why-point elara-glass elara-fade-up elara-fade-up--d2">
               <div class="elara-why-point__number">02</div>
-              <h3 class="elara-why-point__title">Fast Recovery</h3>
+              <h3 class="elara-why-point__title">Ultraljudsdiagnostik</h3>
               <p class="elara-why-point__description">
-                Advanced minimally invasive techniques and tailored rehabilitation programs to get you back to life
-                sooner.
+                Regelbundet användande av ultraljud för att exakt diagnosticera dina besvär och vägleda behandling.
               </p>
             </div>
             <div class="elara-why-point elara-glass elara-fade-up elara-fade-up--d3">
               <div class="elara-why-point__number">03</div>
-              <h3 class="elara-why-point__title">Personalised Care</h3>
+              <h3 class="elara-why-point__title">Idrottsmedicin</h3>
               <p class="elara-why-point__description">
-                Every treatment plan is crafted around your unique needs, lifestyle, and goals.
+                Specialiserad erfarenhet av idrottsskador och idrottsbesvär för alla åldrar.
               </p>
             </div>
-            <div class="elara-why-point elara-glass elara-fade-up elara-fade-up--d4">
+            <div class="elara-why-point elara-glass elara-glass elara-fade-up elara-fade-up--d4">
               <div class="elara-why-point__number">04</div>
-              <h3 class="elara-why-point__title">Modern Techniques</h3>
+              <h3 class="elara-why-point__title">Privat vård</h3>
               <p class="elara-why-point__description">
-                Cutting-edge surgical technology and evidence-based approaches for the best possible outcomes.
+                Inga väntetider, inga försäkringsbegränsningar. Direkt tillgång till specialistvård när du behöver det.
               </p>
             </div>
           </div>
@@ -1544,12 +1574,12 @@
     <section class="elara-section elara-testimonials" id="testimonials">
       <div class="elara-section__container">
         <div class="elara-testimonials__header">
-          <span class="elara-section__label elara-fade-up">Patient Stories</span>
+          <span class="elara-section__label elara-fade-up">Patientberättelser</span>
           <h2 class="elara-section__title elara-fade-up elara-fade-up--d1">
-            Trusted by those <strong>who matter most</strong>
+            Litar ni på de som <strong>betyder mest</strong>
           </h2>
           <p class="elara-section__subtitle elara-fade-up elara-fade-up--d2">
-            Hear from patients whose lives have been transformed through our care.
+            Hör från patienter vars liv har förändrats genom vår vård.
           </p>
         </div>
         <div class="elara-testimonials__grid">
@@ -1582,15 +1612,14 @@
               </svg>
             </div>
             <p class="elara-testimonial-card__quote">
-              "After years of shoulder pain, the team at Elara gave me my life back.
-              The surgery was seamless and the aftercare was truly exceptional. I'm playing
-              tennis again within months."
+              "Efter år med axelbesvär fick Dr Lantz en tydlig diagnos och behandlingsplan.
+              Vården var noggrann och personlig. Jag är tillbaka till mitt aktiva liv."
             </p>
             <div class="elara-testimonial-card__author">
-              <div class="elara-testimonial-card__avatar">JM</div>
+              <div class="elara-testimonial-card__avatar">AS</div>
               <div>
-                <div class="elara-testimonial-card__name">James Mitchell</div>
-                <div class="elara-testimonial-card__role">Shoulder Replacement Patient</div>
+                <div class="elara-testimonial-card__name">Anna Svensson</div>
+                <div class="elara-testimonial-card__role">Axelpatient</div>
               </div>
             </div>
           </div>
@@ -1624,15 +1653,14 @@
               </svg>
             </div>
             <p class="elara-testimonial-card__quote">
-              "The carpal tunnel surgery was life-changing. From the first consultation I felt
-              completely at ease. The precision of care and genuine warmth of the whole team
-              was remarkable."
+              "Professionell och kunnig. Ultraljudsundersökningen gav omedelbara svar på mina knäproblem.
+              Utmärkt uppföljningsvård och tydlig behandlingsplan."
             </p>
             <div class="elara-testimonial-card__author">
-              <div class="elara-testimonial-card__avatar">SR</div>
+              <div class="elara-testimonial-card__avatar">LM</div>
               <div>
-                <div class="elara-testimonial-card__name">Sarah Reynolds</div>
-                <div class="elara-testimonial-card__role">Hand Surgery Patient</div>
+                <div class="elara-testimonial-card__name">Lars Magnusson</div>
+                <div class="elara-testimonial-card__role">Knäpatient</div>
               </div>
             </div>
           </div>
@@ -1666,15 +1694,14 @@
               </svg>
             </div>
             <p class="elara-testimonial-card__quote">
-              "As a professional athlete, I needed the best. The sports injury team understood
-              exactly what I needed to return to competition. Their expertise and dedication
-              is second to none."
+              "Som idrottare behövde jag någon som förstod idrottsskador. Dr Lantz diagnosticerade
+              mina armbågsbesvär snabbt och fick mig tillbaka till träningen tidigare än förväntat."
             </p>
             <div class="elara-testimonial-card__author">
-              <div class="elara-testimonial-card__avatar">DK</div>
+              <div class="elara-testimonial-card__avatar">EJ</div>
               <div>
-                <div class="elara-testimonial-card__name">Daniel Kovacs</div>
-                <div class="elara-testimonial-card__role">Sports Injury Patient</div>
+                <div class="elara-testimonial-card__name">Erik Johansson</div>
+                <div class="elara-testimonial-card__role">Idrottsskadepatient</div>
               </div>
             </div>
           </div>
@@ -1687,41 +1714,27 @@
       <div class="elara-section__container">
         <div class="elara-contact__layout">
           <div class="elara-contact__info">
-            <span class="elara-section__label elara-fade-up">Get In Touch</span>
+            <span class="elara-section__label elara-fade-up">Kontakta mig</span>
             <h2 class="elara-section__title elara-fade-up elara-fade-up--d1">
-              Book your <strong>consultation</strong>
+              Boka din <strong>tid</strong>
             </h2>
             <p class="elara-contact__text elara-fade-up elara-fade-up--d2">
-              Take the first step towards recovery. Our patient coordinators are available
-              to arrange your consultation with one of our specialist surgeons.
+              Ta första steget mot återhämtning. För att boka en tid,
+              vänligen använd bokningslänken nedan eller kontakta mig direkt.
             </p>
             <div class="elara-contact__methods elara-fade-up elara-fade-up--d3">
               <div class="elara-contact__method">
                 <div class="elara-contact__method-icon">
                   <svg viewBox="0 0 24 24">
                     <path
-                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                    </path>
-                  </svg>
-                </div>
-                <div>
-                  <div class="elara-contact__method-label">Telephone</div>
-                  <div class="elara-contact__method-value">
-                    <a href="tel:+442071234567">+44 (0) 207 123 4567</a>
-                  </div>
-                </div>
-              </div>
-              <div class="elara-contact__method">
-                <div class="elara-contact__method-icon">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                     <polyline points="22,6 12,13 2,6"></polyline>
                   </svg>
                 </div>
                 <div>
-                  <div class="elara-contact__method-label">Email</div>
+                  <div class="elara-contact__method-label">E-post</div>
                   <div class="elara-contact__method-value">
-                    <a href="mailto:enquiries@elaraclinic.co.uk">enquiries@elaraclinic.co.uk</a>
+                    <a href="mailto:info@drlantzstockholm.se">info@drlantzstockholm.se</a>
                   </div>
                 </div>
               </div>
@@ -1733,55 +1746,83 @@
                   </svg>
                 </div>
                 <div>
-                  <div class="elara-contact__method-label">Address</div>
+                  <div class="elara-contact__method-label">Plats</div>
                   <div class="elara-contact__method-value">
-                    48 Harley Street, London, W1G 9PU
+                    Stockholm, Sverige
                   </div>
                 </div>
               </div>
+              <div class="elara-contact__method">
+                <div class="elara-contact__method-icon">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="elara-contact__method-label">Besöksavgift</div>
+                  <div class="elara-contact__method-value">
+                    950 kr (privat, frikort gäller ej)
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="elara-social-links elara-fade-up elara-fade-up--d4">
+              <a href="https://www.instagram.com/lantz_ortopedi/" target="_blank" class="elara-social-link" title="Följ på Instagram">
+                <svg viewBox="0 0 24 24">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="mailto:info@drlantzstockholm.se" class="elara-social-link" title="Skicka e-post">
+                <svg viewBox="0 0 24 24">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
             </div>
           </div>
           <div class="elara-contact__form-wrapper elara-glass elara-fade-up elara-fade-up--d2">
             <form class="elara-contact__form" id="elaraContactForm">
               <div class="elara-contact__form-row">
                 <div class="elara-form-group">
-                  <label class="elara-form-group__label" for="elaraFirstName">First Name</label>
-                  <input class="elara-form-group__input" type="text" id="elaraFirstName" placeholder="John" required="">
+                  <label class="elara-form-group__label" for="elaraFirstName">Förnamn</label>
+                  <input class="elara-form-group__input" type="text" id="elaraFirstName" placeholder="Anna" required="">
                 </div>
                 <div class="elara-form-group">
-                  <label class="elara-form-group__label" for="elaraLastName">Last Name</label>
-                  <input class="elara-form-group__input" type="text" id="elaraLastName" placeholder="Smith" required="">
+                  <label class="elara-form-group__label" for="elaraLastName">Efternamn</label>
+                  <input class="elara-form-group__input" type="text" id="elaraLastName" placeholder="Svensson" required="">
                 </div>
               </div>
               <div class="elara-contact__form-row">
                 <div class="elara-form-group">
-                  <label class="elara-form-group__label" for="elaraEmail">Email</label>
-                  <input class="elara-form-group__input" type="email" id="elaraEmail" placeholder="john@example.com"
+                  <label class="elara-form-group__label" for="elaraEmail">E-post</label>
+                  <input class="elara-form-group__input" type="email" id="elaraEmail" placeholder="anna@example.com"
                     required="">
                 </div>
                 <div class="elara-form-group">
-                  <label class="elara-form-group__label" for="elaraPhone">Phone</label>
-                  <input class="elara-form-group__input" type="tel" id="elaraPhone" placeholder="+44 7700 900000">
+                  <label class="elara-form-group__label" for="elaraPhone">Telefon</label>
+                  <input class="elara-form-group__input" type="tel" id="elaraPhone" placeholder="+46 70 123 4567">
                 </div>
               </div>
               <div class="elara-form-group">
-                <label class="elara-form-group__label" for="elaraService">Area of Concern</label>
+                <label class="elara-form-group__label" for="elaraService">Besvärsområde</label>
                 <select class="elara-form-group__select" id="elaraService">
-                  <option value="" disabled="" selected="">Select a specialty</option>
-                  <option value="shoulder">Shoulder</option>
-                  <option value="hand">Hand &amp; Wrist</option>
-                  <option value="elbow">Elbow</option>
-                  <option value="sports">Sports Injury</option>
-                  <option value="other">Other / Not Sure</option>
+                  <option value="" disabled="" selected="">Välj specialitet</option>
+                  <option value="shoulder">Axel</option>
+                  <option value="elbow">Armbåge</option>
+                  <option value="knee">Knä</option>
+                  <option value="other">Annat</option>
                 </select>
               </div>
               <div class="elara-form-group">
-                <label class="elara-form-group__label" for="elaraMessage">Message</label>
+                <label class="elara-form-group__label" for="elaraMessage">Meddelande</label>
                 <textarea class="elara-form-group__textarea" id="elaraMessage"
-                  placeholder="Tell us briefly about your condition or how we can help..."></textarea>
+                  placeholder="Berätta kort om dina besvär eller hur vi kan hjälpa..."></textarea>
               </div>
               <button type="submit" class="elara-btn elara-btn--primary elara-contact__submit">
-                Request Consultation
+                Begär tid
                 <svg class="elara-btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -1797,11 +1838,11 @@
     <!-- Footer -->
     <footer class="elara-footer">
       <div class="elara-footer__container">
-        <p class="elara-footer__copy">© 2024 Elara Clinic. All rights reserved.</p>
+        <p class="elara-footer__copy">© 2024 Dr Sophie Lantz Stockholm. Alla rättigheter förbehållna.</p>
         <div class="elara-footer__links">
-          <a href="#" class="elara-footer__link">Privacy Policy</a>
-          <a href="#" class="elara-footer__link">Terms of Service</a>
-          <a href="#" class="elara-footer__link">Accessibility</a>
+          <a href="#" class="elara-footer__link">Integritetspolicy</a>
+          <a href="#" class="elara-footer__link">Användarvillkor</a>
+          <a href="#" class="elara-footer__link">Tillgänglighet</a>
         </div>
       </div>
     </footer>
@@ -1888,7 +1929,7 @@
                         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                         <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
-                    Thank you — we'll be in touch
+                    Tack — vi hör av oss
                 `;
           submitBtn.style.background = 'var(--color-accent)';
           submitBtn.disabled = true;
